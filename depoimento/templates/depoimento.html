@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block 'content' %}
+
+<section class="testimonials">
+  {%  for depoimentos     in    depoimento   %}
+      <h2>Depoimentos</h2>
+      <div class="testimonial">
+        <p>{{depoimentos.descricao}}</p>
+          <cite> -{{depoimentos.nome}}</cite>
+          </div>
+{% endfor %}
+
+        <div class="testimonial">
+        <p>"O enceramento deixou meu carro com uma aparência incrível. Fiquei muito satisfeito com o resultado."</p>
+
+        </div>
+        <div class="testimonial">
+        <p>"A aspiração foi muito bem-feita. Meu carro ficou livre de sujeira e detritos. Excelente serviço!"</p>
+        <cite> - José Oliveira</cite>
+        </div>
+        <div class="testimonial-carousel">
+        <button class="prev">Anterior</button>
+        <button class="next">Próximo</button>
+        </div>
+        </section>
+{% endblock %}

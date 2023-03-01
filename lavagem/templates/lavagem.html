@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block 'content' %}
+
+<section class="hero">
+      <div class="hero-content">
+        <h1>Lavagem de Carros</h1>
+        <p>Reserve agora e tenha seu carro limpo e brilhante em pouco tempo.</p>
+        <form action="{% url 'lavagem' %}" method="post">{% csrf_token %}
+          <input type="text" placeholder="Nome" name="nome">
+          <input type="text" placeholder="E-mail" name="email">
+          <input type="tel" placeholder="Telefone" name="tel">
+          <button type="submit">Reserve agora</button>
+        </form>
+      </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Lavagem de Carros</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+  </head>
+  <body>
+<header>
+      <nav>
+        <ul>
+          <li><a href="{% url 'lavagem' %}">Reserve já</a></li>
+          <li><a href="{% url 'servico' %}">Serviços</a></li>
+          <li><a href="{% url 'depoimento' %}">Depoimento</a></li>
+          <li><a href="{% url 'equipe' %}">Equipe</a></li>
+            <li><a href="{% url 'agendados' %}">Agendados</a></li>
+        </ul>
+      </nav>
+    </header>
+    {% block 'content' %}
+
+
+
+        <footer>
+        <p>Lavagem de Carros © 2023</p>
+        </footer>
+
+    {% endblock %}
+   <script src="{% static 'script.js' %}"></script>
+          </body>
+        </html>

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block 'content' %}
+
+<section class="features">
+      <h2>Serviços</h2>
+      <div class="feature">
+        <img src="{% static 'lavagem.png' %}" alt="Ícone de lavagem">
+        <h3>Lavagem</h3>
+        <p>Oferecemos uma lavagem completa para deixar seu carro limpo e brilhante.</p>
+      </div>
+      <div class="feature">
+        <img width="50px" src="{% static 'polimento.png' %}" alt="Ícone de enceramento">
+        <h3>Enceramento</h3>
+        <p>Aplicamos cera para proteger a pintura e deixar seu carro com uma aparência ainda melhor.</p>
+      </div>
+      <div class="feature">
+        <img src="{% static 'aspiracao.svg' %}" alt="Ícone de aspiração">
+        <h3>Aspiração</h3>
+        <p>Removemos a sujeira e os detritos do interior do seu carro, deixando-o limpo e fresco.</p>
+      </div>
+    </section>
+{% endblock %}

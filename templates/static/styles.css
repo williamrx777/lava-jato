@@ -1,0 +1,245 @@
+/* Reset padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Estilos globais */
+  body {
+    font-family: Arial, sans-serif;
+  }
+
+  /* Cabeçalho */
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav li {
+    margin-right: 20px;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Herói */
+  .hero {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: center;
+    color: #000;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .hero-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .hero-content button {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+.hero-content button:hover {
+background-color: #e67e22;
+cursor: pointer;
+}
+
+/* Serviços */
+.services {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+margin-top: 50px;
+}
+
+.service {
+background-color: #f1f1f1;
+padding: 20px;
+width: 300px;
+margin: 20px;
+text-align: center;
+border-radius: 10px;
+}
+
+.service h3 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.service p {
+margin-bottom: 20px;
+}
+
+.service img {
+width: 150px;
+margin-bottom: 10px;
+}
+
+/* Depoimentos */
+.testimonials {
+background-color: #eee;
+padding: 50px 0;
+text-align: center;
+}
+
+.testimonial {
+background-color: #fff;
+margin: 0 20px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+display: none;
+}
+
+.testimonial.active {
+display: block;
+}
+
+.testimonial p {
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+
+.testimonial cite {
+font-style: italic;
+}
+
+.testimonial-carousel {
+margin-top: 20px;
+}
+
+.testimonial-carousel button {
+background-color: #f39c12;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+margin: 0 10px;
+cursor: pointer;
+}
+
+/* Equipe */
+.team {
+background-color: #f1f1f1;
+padding: 50px;
+text-align: center;
+}
+
+.team h2 {
+margin-bottom: 20px;
+}
+
+.team-member {
+margin: 20px;
+}
+
+.team-member img {
+width: 150px;
+border-radius: 50%;
+margin-bottom: 10px;
+}
+
+.team-member h3 {
+font-size: 1.2rem;
+margin-bottom: 10px;
+}
+
+.team-member p {
+font-style: italic;
+}
+
+/* Rodapé */
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px;
+}
+
+footer p {
+font-size: 0.8rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+.hero {
+height: auto;
+min-height: 400px;
+}
+
+.hero-content h1 {
+font-size: 2.5rem;
+}
+
+.hero-content p {
+font-size: 1rem;
+}
+
+.services {
+flex-direction: column;
+}
+
+.service {
+width: 100%;
+}
+
+.testimonial {
+margin: 0;
+}
+
+.team {
+padding: 20px;
+}
+
+.team-member {
+margin: 10px;
+}
+}

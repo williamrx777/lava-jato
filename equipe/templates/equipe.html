@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block 'content' %}
+
+<section class="team">
+        <h2>Equipe</h2>
+        <div class="team-member">
+        <img src="{% static 'equipamentos-para-lava-jato.jpg' %}" alt="Foto da equipe">
+        <h3>João</h3>
+        <p>Lavador</p>
+        </div>
+        <div class="team-member">
+        <img src="{% static 'encerando.jpg' %}" alt="Foto da equipe">
+        <h3>Maria</h3>
+        <p>Enceradora</p>
+        </div>
+        <div class="team-member">
+        <img src="{% static 'aspirando.jpg' %}" alt="Foto da equipe">
+        <h3>José</h3>
+        <p>Aspirador</p>
+        </div>
+        </section>
+{% endblock %}

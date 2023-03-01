@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block 'content' %}
+<section class="hero">
+      <div class="hero-content">
+        <h1>Lista dos agendados</h1>
+        <p>Reservas</p>
+        <ol>
+            {% for agendados in lavagem %}
+            <li class="reservas">{{agendados.nome}}</li>
+            {% endfor %}
+        </ol>
+      </div>
+      </section>
+{% endblock %}
